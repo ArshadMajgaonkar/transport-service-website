@@ -1,0 +1,64 @@
+body
+{
+    background-image: url(truck.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+h1
+{
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.753);
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-left:60px;
+}
+
+#container
+{
+    background-color: rgba(25, 15, 34, 0.5);
+    height: 350px;
+    width: 330px;
+    margin: auto ;
+    margin-left:50px;
+    margin-top: 50px;
+    color: white;
+    font-family: sans-serif;
+    padding-left: 55px;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+
+.input-box
+{
+    height: 30px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    background-color: lightblue;
+    color: red;
+}
+
+#login-btn
+{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top:20px;
+    margin-left:60px;
+    background-color: rgba(171, 166, 175,0.5);
+    color: aquamarine;
+}
+
+#login-btn:hover
+{
+    color:aquamarine ;
+    background-color:  rgba(171, 166, 175,0.3);
+    cursor: pointer;
+}

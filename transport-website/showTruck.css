@@ -1,0 +1,52 @@
+
+table
+{
+    /* border: 1px solid red; */
+    /* border-color: black; */
+    color: rgb(178, 207, 207);
+
+    
+}
+th
+{
+    text-align: center;
+    border: 1px solid red;
+    border-collapse: separate;
+}
+td
+{
+    text-align: center;
+    border: 1px solid red;
+    border-collapse: separate;
+}
+body
+{
+    /* background-color: blueviolet; */
+    background-image: url(truck.jpg);
+    background-position: 0 10%;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+h2
+{
+    color: rgb(230, 209, 209);
+    font-weight: bold;
+}
+
+#container
+{
+    background-color:rgba(29, 108, 134, 0.5);
+    height: 100%;
+    width: 35%;
+}
+
+#dashboard-btn
+{
+    border-radius: 5px;
+}
+#dashboard-btn:hover
+{
+    background-color: rgba(255, 255, 255, 0.555);
+    cursor: pointer;
+}

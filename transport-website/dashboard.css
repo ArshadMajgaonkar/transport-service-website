@@ -1,0 +1,47 @@
+body
+{
+    background-image: url(dashboard1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    margin:0px;
+    padding: 0px;
+}
+
+h2
+{
+    color:white;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+}
+#container
+{
+    height: 300px;
+    width: 200px;
+    display: inline-block;
+    background-color: blueviolet;
+    margin-top: 100px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#logout-btn-container
+{
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    background-color: orange;
+}
+.links
+{
+    margin-top: 10px;
+    display: block;
+
+}
+#logout-link
+{
+    text-decoration: none;
+    
+}
