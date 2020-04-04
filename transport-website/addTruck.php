@@ -15,7 +15,6 @@ $result=mysqli_query($connection,$sql);
 
 if(mysqli_affected_rows($connection))
 {
-    echo $trucknumber."<br>";
     echo "success";
 }
 else
@@ -23,8 +22,7 @@ else
     echo "failed";
 }
 
-echo "<br><a href='dashboard.php' > logout </a>";
-// mysqli_close($connection);
+echo "<br><a href='dashboard.php' > Go to Dashboard </a>";
 
 
 ?>

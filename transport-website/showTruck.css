@@ -4,6 +4,7 @@ table
     /* border: 1px solid red; */
     /* border-color: black; */
     color: rgb(178, 207, 207);
+    width: 100%;
 
     
 }
@@ -38,7 +39,7 @@ h2
 {
     background-color:rgba(29, 108, 134, 0.5);
     height: 100%;
-    width: 35%;
+    width: 50%;
 }
 
 #dashboard-btn

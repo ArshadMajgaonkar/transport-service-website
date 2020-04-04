@@ -2,12 +2,12 @@
 
 define('DB_HOST','localhost');
 define('DB_NAME','transport');
-define('DB_USERNAME','root');
+define('DB_USERNAME','root1');   //error
 define('DB_PASSWORD','root');
 
 $trucknumber="mh 08 2345";
 $truckmileage=20;
-$truckdate="2020-04-25";
+$truckdate="2030-04-23";
 
 $connection=mysqli_connect(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_NAME) or die("cannot connect");
 
@@ -17,7 +17,7 @@ mysqli_query($connection,$sql);
 
 if(mysqli_affected_rows($connection))
 {
-    echo "inserted";
+    echo "inserted".$truckdate;
 }
 else
 {

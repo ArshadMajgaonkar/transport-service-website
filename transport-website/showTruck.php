@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="showTruck.css" type="text/css">
     </head>
     <body>
-
+        <?php session_start(); ?>
         <h2>Truck Details : </h2> <br>
         <div id='container'>
             <table>

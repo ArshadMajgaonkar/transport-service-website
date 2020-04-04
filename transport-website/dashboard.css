@@ -21,6 +21,7 @@ h2
     width: 200px;
     display: inline-block;
     background-color: blueviolet;
+    color: wheat;
     margin-top: 100px;
     margin-left: 20px;
     box-sizing: border-box;
@@ -36,9 +37,14 @@ h2
 }
 .links
 {
-    margin-top: 10px;
+    margin-top: 20px;
     display: block;
+    color: wheat;
 
+}
+.links:hover
+{
+    text-decoration: underline;
 }
 #logout-link
 {

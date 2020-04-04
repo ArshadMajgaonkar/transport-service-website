@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>New Record</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="addNewRecord.css">
+    </head>
+    <body>
+        <h1>Add New Record : </h1> <br>
+        <div id="container">
+            <form method="POST" action="addNewRecord.php">
+                <input type="text" class="input-box" name="trucknumber" placeholder="Enter truck number"> <br> <br>
+                <input type="text"  class="input-box" name="drivername"  placeholder="Enter driver name"><br> <br>
+                <input type="text" class="input-box" name="source" placeholder="Enter source"> <br> <br>
+                <input type="text" class="input-box" name="destination" placeholder="Enter destination"> <br> <br>
+                <label id="date-label" >Enter start date : </label><br><input type="date" class="input-box" name="startdate"> <br> <br>
+                <label id="date-label" >Enter end date : </label><br><input type="date" class="input-box" name="enddate"> <br> <br>
+                <input type="number" class="input-box" name="received-amt" placeholder="Enter amount received"> <br> <br>
+                <input type="number" class="input-box" name="spend-amt" placeholder="Enter amount spend"> <br> <br>
+                <input type="submit" id="add-btn" value="Add">  
+                <button value="back" name="back"><a href="dashboard.php">Back</a></button>
+            </form>
+        </div>
+
+        
+
+        <script src="" async defer></script>
+    </body>
+</html>

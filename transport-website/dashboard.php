@@ -9,7 +9,7 @@
     </head>
     <body>
     <div id="logout-btn-container">
-        <a href="logout.php">Logout</a>
+        <button id="logout-btn"><a href="logout.php">Logout</a></button>
     </div>  
         <?php 
         session_start();
@@ -28,14 +28,17 @@
 
 
         <div id="container">
-            <a href="addTruck.html" class="links">ADD TRUCK</a> <br>
+            <a href="addTruck.html" class="links">ADD TRUCK</a> 
             <a href="showTruck.php" class="links">SHOW ALL TRUCKS</a>
+            <a href="addNewRecord.html" class="links">ADD NEW RECORD</a> 
+            <a href="history.php" class="links">PAYMENTS HISTORY</a>
+            <a href="truckAvailability.html" class="links">CHECK TRUCK AVAILABILITY</a>
         </div>
 
 
-
+        <script src="" async defer>  </script>
         
-        <script src="" async defer></script>
+
     </body>
 </html>
 
