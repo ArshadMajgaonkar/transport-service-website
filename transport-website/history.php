@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Payments</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="" type="text/css">
@@ -46,6 +46,7 @@ h2
 #container
 {
     background-color:rgba(29, 108, 134, 0.5);
+    color: aquamarine;
     height: 100%;
     width: 85%;
 }
@@ -71,6 +72,17 @@ h2
     font-weight: bold;
 }
 </style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162285730-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162285730-2');
+</script>
+
     </head>
     <body>
      <?php session_start(); ?>
@@ -108,13 +120,16 @@ h2
                         <td>".$row['Profit']."</td>                        
                         </tr>";
                     }
-                    if(mysqli_num_rows($result)==0)
-                    {
-                        echo "0 results";
-                    }
+                   
 
                 ?>
             </table>
+            <?php
+             if(mysqli_num_rows($result)==0)
+             {
+                 echo "0 results";
+             }
+            ?>
         </div>
         <br> <br>
         <button id="dashboard-btn"><a href="dashboard.php">Go to dashboard</a></button>
