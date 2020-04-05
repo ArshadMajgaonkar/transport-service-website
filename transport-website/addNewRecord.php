@@ -1,6 +1,8 @@
 <?php
     require "../inc/dbinfo.php";
 
+    session_start();
+    
     $trucknumber=$_POST['trucknumber'];
     $drivername=$_POST['drivername'];
     $source=$_POST['source'];

@@ -59,6 +59,17 @@ h2
     background-color: rgba(255, 255, 255, 0.555);
     cursor: pointer;
 }
+#second-div
+{
+    height: 140px;
+    width: 25%;
+    background-color: rgba(255, 0, 0, 0.3);
+    margin-top: 50px;
+    padding: 10px;
+    color: aquamarine;
+    font-family: sans-serif;
+    font-weight: bold;
+}
 </style>
     </head>
     <body>
@@ -107,7 +118,31 @@ h2
         </div>
         <br> <br>
         <button id="dashboard-btn"><a href="dashboard.php">Go to dashboard</a></button>
+        <div id="second-div">
+            <?php
+                // require "../inc/dbinfo.php";
 
+                $sql="SELECT `Received Amt`, `Spend Amt`, `Profit`, `ID` FROM `records` ";
+                $profit=0;
+                $receivedamt=0;
+                $spendamt=0;
+
+                $result=mysqli_query($connection,$sql);
+
+                while($row=mysqli_fetch_assoc($result))
+                {
+                    $profit = $profit + $row['Profit'] ;
+                    $receivedamt = $receivedamt + $row['Received Amt'] ;
+                    $spendamt = $spendamt + $row['Spend Amt'] ;
+                }
+
+                echo "<br>Profit = ".$profit." Rs.";
+                echo "<br><br>Received Amount  = ".$receivedamt." Rs.";
+                echo "<br><br>Spend Amount = ".$spendamt." Rs.";
+                
+            ?>
+        
+        </div>
         <script src="" async defer></script>
     </body>
 </html>

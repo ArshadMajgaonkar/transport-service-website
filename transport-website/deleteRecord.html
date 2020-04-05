@@ -2,32 +2,50 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Available</title>
+        <title>Delete Records</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
             body
             {
-                background-image: url(truck.jpg);
                 font-family: sans-serif;
                 font-weight: bold;
+                background-image: url(sunset.jpg);
             }
             #container
             {
-                height: 150px;
-                width: 250px;
-                padding: 40px;
-                background-color: rgba(255,20,20, 0.4);
-                margin-top:10%;
-                margin-left: 40%;
+                height: 200px;
+                width: 300px;
+                /* background-color: rgba(200,10,20,0.5); */
+                margin-top: 100px;
+                margin-right: 50px;
+                
             }
-            #input-box
+            nav
+            {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            label
+            {
+                color: rgb(230, 209, 209);
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            h2
+            {
+                color: rgb(230, 209, 209);
+                font-weight: bold;
+                font-size: 40px;
+            }
+            .input-box
             {
                 height: 30px;
                 width: 200px;
                 padding: 10px;
-                margin-top:10px;
+                margin-top:20px;
                 border-radius: 20px;
                 font-family: sans-serif;
                 font-size: medium;
@@ -53,22 +71,20 @@
                 background-color:  rgba(171, 166, 175,0.3);
                 cursor: pointer;
             }
-            h1
-            {
-                color: rgb(230, 209, 209);
-                font-weight: bold;
-            }
         </style>
     </head>
     <body>
-        <?php session_start(); ?>
-        <h1>Check if a truck is Available :</h1> <br>
+        <h2>Confirm Delete : </h2>
+        <nav>
         <div id="container">
-            <form method="POST" action="truckAvailability.php">
-                <input name="trucknumber" type="text" id="input-box" placeholder="Enter truck number"><br>
-                <input type="submit" id="btn" value="Search">
-            </form>
+           <form method="POST" action="deleteRecord.php">
+            <label>Are you sure , <br>you want to delete all records ?</label><br>
+            <input type="text" name="msg" placeholder="Type   DELETE " class="input-box"><br>
+            <input type="submit" id="btn" value="DELETE">
+           </form>
+           <br><br><?php echo $displaymsg; ?>
         </div>
+        </nav>
         
         <script src="" async defer></script>
     </body>

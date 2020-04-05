@@ -33,6 +33,7 @@
             <a href="addNewRecord.html" class="links">ADD NEW RECORD</a> 
             <a href="history.php" class="links">PAYMENTS HISTORY</a>
             <a href="truckAvailability.html" class="links">CHECK TRUCK AVAILABILITY</a>
+            <a href="deleteRecord.html" class="links">CLEAR PAYMENT HISTORY</a>
         </div>
 
 

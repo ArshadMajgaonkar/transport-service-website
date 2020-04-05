@@ -2,18 +2,20 @@ body
 {
     background-image: url(truck.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.938);
     box-sizing: border-box;
 }
 
-/* h1
+h1
 {
     font-weight: bold;
     color: rgba(255, 255, 255, 0.753);
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 30px;
     margin-left:60px;
-} */
+}
 
 #container
 {
@@ -32,7 +34,7 @@ body
 
 .input-box
 {
-    height: 10px;
+    height: 5px;
     width: 200px;
     padding: 10px;
     margin-top:10px;
@@ -47,12 +49,12 @@ body
 #date-label
 {
     display: block;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom:0 px;
     padding: 0px;
 }
 
-#add-btn
+#add-btn 
 {
     font-size: 20px;
     font-family: sans-serif;
@@ -60,7 +62,23 @@ body
     padding: 10px;
     border-radius: 20px;
     margin-top:25px;
-    margin-left:60px;
+    margin-left:30px;
     background-color: rgba(171, 166, 175,0.5);
+    color: aquamarine;
+}
+#back-btn
+{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top:25px;
+    margin-left:30px;
+    background-color: rgba(171, 166, 175,0.5);
+    color: aquamarine;
+}
+a
+{
     color: aquamarine;
 }
