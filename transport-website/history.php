@@ -85,7 +85,14 @@ h2
 
     </head>
     <body>
-     <?php session_start(); ?>
+     <?php session_start(); 
+        if(empty($_SESSION['username']))
+        {
+            // $_SESSION['msg']="you must login first";
+            header('location:index.php');
+        }
+
+     ?>
         <h2>PAYMENT HISTORY : </h2> <br>
         <div id='container'>
             <table>
