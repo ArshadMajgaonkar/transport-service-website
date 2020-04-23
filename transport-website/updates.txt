@@ -1,3 +1,4 @@
 last page css
 bug in truckAvailability
 responsive behaviour
+download/email_report button for payments history
